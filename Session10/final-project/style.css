@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    height: 38px;
+    border: 1px solid #eae9ea;
+    border-radius: 5px;
+}
+.register-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url("img/Tổng-hợp-hình-ảnh-anime-galaxy-phong-cảnh-đẹp-nhất-5.jpg")center center no-repeat;
+    background-size: cover;
+}
+.log-in-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url("img/hinh\ anh\ thien\ nhien\ dep\ 2015\ \(1\).jpeg") center center no-repeat;
+    background-size: cover;
+}
+.register-form{
+    min-width: 500px;
+    padding: 0px 50px;
+}
+.login-form{
+    min-width: 500px;
+    
+    padding: 0px 50px;
+}
+.form-header{
+    padding: 70px 0px;
+}
+.form-header>h3{
+    text-align: center;
+    font-size: 32px;
+    color: #788195;
+}
+.name-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.form-content>*{
+    margin-bottom: 15px;
+}
+.name-wrapper>*{
+    width: calc(50% - 7px);
+}
+.form-footer{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    text-decoration: underline;
+}
+button:hover{
+    cursor: pointer;
+}
+button:disabled{
+    background-color: grey;
+}
+button{
+    width: 120px;
+    height: 38px;
+    padding: 10px;
+    background: #4481fe;
+    color: white;
+    border: none;
+    border-radius: 6px;
+
+}
+.messgae-error{
+    color: red;
+}
+.messgae-success{
+    text-shadow: aliceblue;
+    color:greenyellow
+}

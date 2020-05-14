@@ -1,0 +1,274 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+body {
+    top: 0;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    background-color: #F9FAFA;
+}
+
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark);
+
+}
+
+.brand-name {
+    grid-area: brand-name;
+    margin-left: 20px;
+}
+
+.nav-bar {
+    grid-area: nav-bar;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-bar ul li {
+    background-color: #2185d0;
+    margin: 10px;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.nav-bar a:hover {
+    background: var(--light);
+    color: var(--dark);
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+}
+
+.brand-name-text {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 2rem;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Pacifico', cursive;
+}
+
+.brand-name {
+    align-self: center;
+    justify-self: center;
+}
+
+/* introduction */
+.introduction-text {
+    background-image: linear-gradient(to right top, #25141e, #2c1729, #301c35, #312243, #2d2952, #2b3a68, #224c7e, #005e92, #0080af, #00a2c5, #00c5d4, #45e7dd);
+    /* background: url(/Health-as-a-poll-issue.jpg) no-repeat center center; */
+    margin-left: 12rem;
+    margin-right: 10rem;
+    text-align: center;
+    color: var(--primary);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+/* main */
+.main {
+    width: 74%;
+    height: auto;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-gap: 2rem;
+    margin-bottom: 5%;
+    margin-top: 1px;
+}
+.container{
+    grid-column-start:2 ;
+}
+h2{
+    text-align: center;
+}
+
+.tags {
+    grid-column-start: 1;
+    grid-column-end: 2;
+ 
+}
+
+.tag-list {
+    list-style: none;
+    max-width: 300px;
+}
+
+.tag-list .item {
+    padding: 10px 50px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.tag-list .item:last-child {
+
+    padding: 10px 50px;
+    border-bottom: none;
+
+}
+
+.tag-list .header {
+    background-color: #2185d0;
+    color: white;
+}
+
+.tag-link {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 250px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+}
+
+.card-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+
+/* Darker background on mouse-over */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border: 1px solid #e3e3e3;
+    /* background-color: #FFFFFF; */
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+}
+
+/* userAdd */
+.content {
+    padding: 12px;
+    margin-bottom: 3px;
+    background-color: #FFFFFF;
+}
+
+.image-class {
+    width: 100%;
+}
+
+.wrapper-info {
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    padding-left: 12px;
+    margin-top: 10px;
+}
+
+.hastag {
+    padding-bottom: 1 px;
+    padding: 2px 3px;
+    background-color: black;
+    display: inline-block;
+    color: white;
+    border-radius: 2px;
+    margin-top: 2px;
+}
+
+.author {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+
+.interact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 12px;
+    margin-top: 3px;
+}
+
+.btn-interact {
+    background-color: var(--dark);
+    border: none;
+    color: white;
+    padding: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 12px;
+}
+
+.btn-interact:hover {}
+
+/* footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark);
+    height: auto;
+    text-align: center;
+    color: var(--light);
+    /* padding: 3px; */
+    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fab.fa-telegram-plane.fa-2x {
+    color: #fff;
+    padding-right: 8px;
+}
+
+.fab.fa-telegram-plane.fa-2x:hover {
+    transform: scale(1.4);
+}
+
+.fab.fa-github-square.fa-2x {
+    color: #fff;
+    padding-right: 8px;
+}
+
+.fab.fa-github-square.fa-2x:hover {
+    transform: scale(1.4);
+}
+
+.fab.fa-facebook-square.fa-2x {
+    color: #fff;
+    padding-right: 8px
+}
+
+.fab.fa-facebook-square.fa-2x:hover {
+    transform: scale(1.4);
+}
+
+/* add for form */
+.btn.btn-default.btn-rounded.mb-4.btn-dark {
+    margin-top: 25px;
+}
